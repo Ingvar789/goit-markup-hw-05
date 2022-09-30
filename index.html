@@ -28,7 +28,7 @@
             <!--Навігація по сайту-->
         <nav>
             <ul class="list">
-                <li class="header-nav nav-bot-line"><a href="index.html" class="nav-button">Студія</a></li>
+                <li class="header-nav nav-bot-line"><a href="index.html" class="nav-button current-page">Студія</a></li>
                 <li class="header-nav"><a href="portfolio.html" class="nav-button">Портфоліо</a></li>
                 <li class="header-nav"><a href="Контакти" class="nav-button">Контакти</a></li>
             </ul>
@@ -53,27 +53,26 @@
         </ul>
         </div>
     </header>
+    <!--Контент-->
 
+    <main>
         <!-- Основний заголовок-->
         
         <section class="grey-section hero-background">
             <div class="container hero">
-            <div class="">
-            <h1 class="main-inscription">Ефективні рішення для вашого бізнесу</h1>
-            <button  type="button" class="main-button" data-modal-open>Замовити послугу</button>
-            </div>
+                <div class="">
+                    <h1 class="main-inscription">
+                        <div>Ефективні рішення для</div>
+                        <div>вашого бізнесу</div>
+                    </h1>
+                    <button type="button" class="main-button" data-modal-open>Замовити послугу</button>
+                </div>
             </div>
         </section>
-    
-        
-
-    <!--Контент-->
-
-    <main>
 
         <!-- Особливості-->
 
-        <section class="container">
+        <section class="container container-feature">
             <ul class="list">
                 <li class="feature-item icon-antena">
                     <h2 class="title feature-title">УВАГА ДО ДЕТАЛЕЙ</h2>
@@ -81,15 +80,15 @@
                 </li>
                 <li class="feature-item icon-clock">
                     <h2 class="title feature-title">ПУНКТУАЛЬНІСТЬ</h2>
-                    <p>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+                    <p class="feature">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
                 </li>
                 <li class="feature-item icon-computer">
                     <h2 class="title feature-title">ПЛАНУВАННЯ</h2>
-                    <p>Так само консультація з широким активом значною мірою зумовлює.</p>
+                    <p class="feature">Так само консультація з широким активом значною мірою зумовлює.</p>
                 </li>
                 <li class="feature-item icon-astronaut">
                     <h2 class="title feature-title">СУЧАСНІ ТЕХНОЛОГІЇ</h2>
-                    <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+                    <p class="feature">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
                 </li>
             </ul>
         </section>
@@ -127,10 +126,11 @@
             <ul class="list">
                 <li class="team-card">
                     <img src="images/team-member1.jpg" width="270" alt="На фото Ігор Дем'яненко">
+                    <div class="teammate-description">
                     <h3 class="title teammate-name">Ігор Дем'яненко</h3>
                     <p class="teammate-profession">Product Designer</p>
                     <ul class=" list social-list">
-                        <li class="list">
+                        <li class="list social-list-item">
                             <a href="https://www.instagram.com/" class="icon-button">
                                 <svg class="icon-social">
                                     <use href="./images/sprite.svg#icon-instagram">
@@ -138,7 +138,7 @@
                                 </svg>
                             </a>
                         </li>
-                        <li class="list">
+                        <li class="list social-list-item">
                             <a href="https://twitter.com/" class="icon-button">
                                 <svg class="icon-social">
                                     <use href="./images/sprite.svg#icon-twitter">
@@ -146,7 +146,7 @@
                                 </svg>
                             </a>
                         </li>
-                        <li class="list">
+                        <li class="list social-list-item">
                             <a href="https://www.facebook.com/" class="icon-button">
                                 <svg class="icon-social">
                                     <use href="./images/sprite.svg#icon-facebook">
@@ -154,7 +154,7 @@
                                 </svg>
                             </a>
                         </li>
-                        <li class="list">
+                        <li class="list social-list-item">
                             <a href="https://www.linkedin.com/" class="icon-button">
                                 <svg class="icon-social">
                                     <use href="./images/sprite.svg#icon-linkedin">
@@ -163,54 +163,58 @@
                             </a>
                         </li>
                     </ul>
+                    </div>
                 </li>
 
                 <li class="team-card">
                     <img src="images/team-member2.jpg" width="270" alt="На фото Ольга Рєпіна">
+                <div class="teammate-description">
                     <h3 class="title teammate-name">Ольга Рєпіна</h3>
                     <p class="teammate-profession">Frontend Developer</p>
-                <ul class=" list social-list">
-                    <li class="list">
-                        <a href="https://www.instagram.com/" class="icon-button">
-                            <svg class="icon-social">
-                                <use href="./images/sprite.svg#icon-instagram">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="list">
-                        <a href="https://twitter.com/" class="icon-button">
-                            <svg class="icon-social">
-                                <use href="./images/sprite.svg#icon-twitter">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="list">
-                        <a href="https://www.facebook.com/" class="icon-button">
-                            <svg class="icon-social">
-                                <use href="./images/sprite.svg#icon-facebook">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="list">
-                        <a href="https://www.linkedin.com/" class="icon-button">
-                            <svg class="icon-social">
-                                <use href="./images/sprite.svg#icon-linkedin">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+                    <ul class=" list social-list">
+                        <li class="list social-list-item">
+                            <a href="https://www.instagram.com/" class="icon-button">
+                                <svg class="icon-social">
+                                    <use href="./images/sprite.svg#icon-instagram">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="list social-list-item">
+                            <a href="https://twitter.com/" class="icon-button">
+                                <svg class="icon-social">
+                                    <use href="./images/sprite.svg#icon-twitter">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="list social-list-item">
+                            <a href="https://www.facebook.com/" class="icon-button">
+                                <svg class="icon-social">
+                                    <use href="./images/sprite.svg#icon-facebook">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="list social-list-item">
+                            <a href="https://www.linkedin.com/" class="icon-button">
+                                <svg class="icon-social">
+                                    <use href="./images/sprite.svg#icon-linkedin">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
                 </li>
 
                 <li class="team-card">
                     <img src="images/team-member3.jpg" width="270" alt="На фото Микола Тарасенко">
+                <div class="teammate-description">
                     <h3 class="title teammate-name">Микола Тарасов</h3>
                     <p class="teammate-profession">Marketing</p>
                     <ul class=" list social-list">
-                        <li class="list">
+                        <li class="list social-list-item">
                             <a href="https://www.instagram.com/" class="icon-button">
                                 <svg class="icon-social">
                                     <use href="./images/sprite.svg#icon-instagram">
@@ -218,7 +222,7 @@
                                 </svg>
                             </a>
                         </li>
-                        <li class="list">
+                        <li class="list social-list-item">
                             <a href="https://twitter.com/" class="icon-button">
                                 <svg class="icon-social">
                                     <use href="./images/sprite.svg#icon-twitter">
@@ -226,7 +230,7 @@
                                 </svg>
                             </a>
                         </li>
-                        <li class="list">
+                        <li class="list social-list-item">
                             <a href="https://www.facebook.com/" class="icon-button">
                                 <svg class="icon-social">
                                     <use href="./images/sprite.svg#icon-facebook">
@@ -234,7 +238,7 @@
                                 </svg>
                             </a>
                         </li>
-                        <li class="list">
+                        <li class="list social-list-item">
                             <a href="https://www.linkedin.com/" class="icon-button">
                                 <svg class="icon-social">
                                     <use href="./images/sprite.svg#icon-linkedin">
@@ -243,38 +247,40 @@
                             </a>
                         </li>
                     </ul>
+                </div>
                 </li>
 
                 <li class="team-card">
                     <img src="images/team-member4.jpg" width="270" alt="На фото Михайло Єрмаков">
+                <div class="teammate-description">
                     <h3 class="title teammate-name">Михайло Єрмаков</h3>
                     <p class="teammate-profession">UI Designer</p>
                     <ul class=" list social-list">
-                        <li class="list">
+                        <li class="list social-list-item">
                             <a href="https://www.instagram.com/" class="icon-button">
                                 <svg class="icon-social">
                                     <use href="./images/sprite.svg#icon-instagram">
                                     </use>
                                 </svg>
                             </a>
-                            </li>
-                            <li class="list">
+                        </li>
+                        <li class="list social-list-item">
                             <a href="https://twitter.com/" class="icon-button">
                                 <svg class="icon-social">
                                     <use href="./images/sprite.svg#icon-twitter">
                                     </use>
                                 </svg>
                             </a>
-                            </li>
-                            <li class="list">
+                        </li>
+                        <li class="list social-list-item">
                             <a href="https://www.facebook.com/" class="icon-button">
                                 <svg class="icon-social">
                                     <use href="./images/sprite.svg#icon-facebook">
                                     </use>
                                 </svg>
                             </a>
-                            </li>
-                            <li class="list">
+                        </li>
+                        <li class="list social-list-item">
                             <a href="https://www.linkedin.com/" class="icon-button">
                                 <svg class="icon-social">
                                     <use href="./images/sprite.svg#icon-linkedin">
@@ -283,6 +289,7 @@
                             </a>
                         </li>
                     </ul>
+                </div>
                 </li>
             </ul>
             </div>
@@ -356,7 +363,7 @@
                 <div class="footer-social">
                     <h3 class="title-footer">Приєднуйтесь</h3>
                     <ul class=" list social-list">
-                        <li class="list">
+                        <li class="list social-list-item">
                             <a href="https://www.instagram.com/" class="icon-button icon-social-footer">
                                 <svg class="icon-social">
                                     <use href="./images/sprite.svg#icon-instagram">
@@ -364,7 +371,7 @@
                                 </svg>
                             </a>
                         </li>
-                        <li class="list">
+                        <li class="list social-list-item">
                             <a href="https://twitter.com/" class="icon-button icon-social-footer">
                                 <svg class="icon-social">
                                     <use href="./images/sprite.svg#icon-twitter">
@@ -372,7 +379,7 @@
                                 </svg>
                             </a>
                         </li>
-                        <li class="list">
+                        <li class="list social-list-item">
                             <a href="https://www.facebook.com/" class="icon-button icon-social-footer">
                                 <svg class="icon-social">
                                     <use href="./images/sprite.svg#icon-facebook">
@@ -380,7 +387,7 @@
                                 </svg>
                             </a>
                         </li>
-                        <li class="list">
+                        <li class="list social-list-item">
                             <a href="https://www.linkedin.com/" class="icon-button icon-social-footer">
                                 <svg class="icon-social">
                                     <use href="./images/sprite.svg#icon-linkedin">

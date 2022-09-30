@@ -8,8 +8,8 @@ body {
 /*загальний контейнер*/
 .container {
   width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto 94px auto;
+  padding: 94px 15px;
+  margin: 0 auto;
 }
 /*футер-контейнер*/
 .footer-container {
@@ -131,15 +131,7 @@ body {
 .header-nav:not(:last-child) {
   margin-right: 50px;
 }
-.nav-bot-line::after {
-  content: '';
-  position: absolute;
-  bottom: -1px;
-  width: 100%;
-  height: 4px;
-  background: var(--accent-color);
-  border-radius: 2px;
-}
+
 
 .nav-button {
   display: block;
@@ -151,13 +143,27 @@ body {
   text-decoration: none;
   letter-spacing: 0.02em;
 
-  transition: var(--text-title-color) 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function);
 }
 
 .nav-button:hover,
 .nav-button:focus {
   color: var(--accent-color);
   z-index: 2;
+}
+
+.current-page {
+  color: var(--accent-color);
+}
+
+.nav-bot-line::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+  height: 4px;
+  background: var(--accent-color);
+  border-radius: 2px;
 }
 
 /* контакти  */
@@ -179,7 +185,7 @@ align-items:stretch;
 }
 
 .contacts-header {
-  transition: var(--secondary-color), var(--svg-main-color) 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function);
 }
 .contacts-header:hover,
 .contacts-header:focus {
@@ -261,7 +267,7 @@ align-items:stretch;
   line-height: 1.9;
   letter-spacing: 0.06em;
 
-  transition: var(--accent-color) 250ms var(--timing-function);
+  transition: background-color 250ms var(--timing-function);
 }
 
 .main-button:hover,
@@ -275,7 +281,9 @@ align-items:stretch;
 
 
 /*особливості*/
-
+.container-feature {
+  padding-bottom: 0;
+}
 .feature-item {
   width: 270px;
 }
@@ -378,9 +386,6 @@ background-position: center;
 
 .our-team {
   background-color: var(--background-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
-  margin-bottom: 94px;
 }
 
 .team-card {
@@ -393,9 +398,15 @@ background-position: center;
 .team-card:not(:last-child) {
   margin-right: 30px;
 }
-
+.team-card img {
+  display: block;
+}
+.teammate-description {
+  padding: 30px 0;
+}
 .teammate-name {
-  padding-top: 30px;
+  padding:0;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -403,8 +414,8 @@ background-position: center;
 }
 
 .teammate-profession {
-  margin: 0;
-  padding-top: 10px;
+  padding: 0;
+  margin: 0 0 16px 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -414,7 +425,10 @@ background-position: center;
 .social-list {
   justify-content: center;
   align-items: center;
-  margin: 16px auto 30px auto;
+  margin: 0 auto;
+}
+.social-list-item:not(:last-child) {
+  margin-right: 10px;
 }
 .icon-button {
   display: flex;
@@ -429,7 +443,7 @@ background-position: center;
   background-color: var(--secondary-color);
   cursor: pointer;
 
-  transition-property: var(--secondary-color), var(--svg-main-color) 250ms var(--timing-function);
+  transition-property: background-color 250ms var(--timing-function), color 250ms var(--timing-function) ;
 }
 
 .icon-button:hover,
@@ -462,7 +476,7 @@ background-position: center;
   border-radius: 4px;
   cursor: pointer;
 
-  transition-property: var(--svg-main-color) 250ms var(--timing-function);
+  transition-property: color 250ms var(--timing-function);
 }
 
 .regular-customer-link:hover,
@@ -512,7 +526,9 @@ background-position: center;
   color: var(--text-title-color);
   padding: 6px 22px;
 
-  transition: var(--background-color), var(--text-title-color) 250ms var(--timing-function);
+  transition: background-color 250ms var(--timing-function), 
+  color 250ms var(--timing-function), 
+  box-shadow color 250ms var(--timing-function);
 }
 
 .anchor:hover,
@@ -679,6 +695,7 @@ background-position: center;
 
 .icon-social-footer {
   background-color: rgba(255, 255, 255, 0.1);
+  color: var(--secondary-color)
   ;
 }
 
