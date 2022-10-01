@@ -443,7 +443,7 @@ background-position: center;
   background-color: var(--secondary-color);
   cursor: pointer;
 
-  transition-property: background-color 250ms var(--timing-function), color 250ms var(--timing-function) ;
+  transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function) ;
 }
 
 .icon-button:hover,
@@ -476,7 +476,7 @@ background-position: center;
   border-radius: 4px;
   cursor: pointer;
 
-  transition-property: color 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function), border-color 250ms var(--timing-function);
 }
 
 .regular-customer-link:hover,
@@ -496,13 +496,10 @@ background-position: center;
 /* 2 ДРУГА СТОРІНКА, ПОРТФОЛІО */
 
 /*контейнер для кнопок портфоліо*/
-.portfolio-filter-container {
+.anchor-buttons {
   display: flex;
   justify-content: center;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 94px auto 50px auto;
+  margin-bottom: 50px;
 }
 
 .portfolio {
@@ -534,7 +531,7 @@ background-position: center;
 .anchor:hover,
 .anchor:focus {
   background-color: var(--accent-color);
-  color: white;
+  color: var(--secondary-color);
   cursor: pointer;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
@@ -565,7 +562,7 @@ background-position: center;
   cursor: pointer;
 
 
-  transition-property: box-shadow 250ms var(--timing-function);
+  transition: box-shadow 250ms var(--timing-function);
 }
 
 .link-portfolio:hover,
