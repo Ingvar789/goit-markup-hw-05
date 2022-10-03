@@ -525,7 +525,7 @@ background-position: center;
 
   transition: background-color 250ms var(--timing-function), 
   color 250ms var(--timing-function), 
-  box-shadow color 250ms var(--timing-function);
+  box-shadow 250ms var(--timing-function);
 }
 
 .anchor:hover,
